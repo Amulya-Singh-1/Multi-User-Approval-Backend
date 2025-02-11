@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: MultiUserApproval
+  datasource:
+    url: jdbc:postgresql://localhost:5432/MultiUserApproval
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: amulyasinghk9@gmail.com
+    password: idk@123idk
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+server:
+  port: 8080
